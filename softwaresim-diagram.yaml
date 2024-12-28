@@ -1,0 +1,755 @@
+mouseWheel:
+  closed: false
+  currentObservers: null
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+elementDraw:
+  closed: false
+  currentObservers: null
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+snapSettings:
+  constraints: 16
+serializationSettings:
+  preventDefaults: true
+contextMenuSettings:
+  show: true
+  items:
+    - text: Edit
+      id: edit
+      target: .e-elementcontent
+      iconCss: fa fa-cogs
+    - text: Callout To
+      id: callout
+      target: .e-elementcontent
+      iconCss: fa fa-crosshairs
+    - text: Increase font size ↑
+      id: increaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Decrease font size ↓
+      id: decreaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Bold
+      id: boldText
+      target: .e-elementcontent
+      iconCss: fa fa-bold
+    - text: Italicize
+      id: italicizeText
+      target: .e-elementcontent
+      iconCss: fa fa-italic
+    - text: Fill
+      id: fill
+      target: .e-elementcontent
+      iconCss: fa fa-tint
+    - text: Highlight
+      id: highlight
+      target: .e-elementcontent
+      iconCss: fa fa-lightbulb-o
+    - text: Collapse to square
+      id: collapseToSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to named square
+      id: collapseToNamedSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to circle
+      id: collapseToCircle
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Expand
+      id: expand
+      target: .e-elementcontent
+      iconCss: fa fa-expand
+    - text: Bring to front
+      id: front
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-up
+    - text: Bring forward
+      id: forward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-up
+    - text: Send backward
+      id: backward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-down
+    - text: Send to back
+      id: back
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-down
+    - text: Remove
+      id: remove
+      target: .e-elementcontent
+      iconCss: fa fa-times
+  showCustomMenuOnly: true
+tool: 5
+scrollSettings:
+  scrollLimit: Infinity
+  viewPortWidth: 930
+  viewPortHeight: 603
+  horizontalOffset: 30
+  verticalOffset: -98.5
+addInfo:
+  currencyText: USD ($)
+  currencySymbol: $
+  selectedViewType: 0
+  name: BigQuery+Jupyter
+  author: Nodematic
+  description: "<p>Example Dataset:
+    https://archive.ics.uci.edu/ml/machine-learning-databases/00352/Online
+    Retail.xlsx</p><p><br></p><p>Key findings:</p><ul><li>Leverage the BigQuery
+    magic for super seamless Pandas+BQ analysis</li><li>Use the to_gbq method on
+    DataFrames to save derived assets</li><li>Use the (effectively) infinite
+    scalability of BigQuery to our advantage (less processing in Jupyter, more
+    visualization in Jupyter)</li><li>Consider drafting BQ queries in the
+    BigQuery console, but versioning and notebook-ifying them in
+    Jupyter</li><li>Use seamless authentication and authorization when possible
+    (e.g., service accounts with Vertex AI Workbench</li></ul>"
+  experiments: []
+  experimentCols:
+    - field: name
+      header: Name
+  phases:
+    - name: Define
+      color: "#baf2e9"
+    - name: Measure
+      color: "#baf2e9"
+    - name: Analyze
+      color: "#baf2e9"
+    - name: Improve
+      color: "#baf2e9"
+    - name: Control
+      color: "#baf2e9"
+height: 603
+nodes:
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/bigquery_Black_87_wnczcr.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/bigquery_qbcoev.webp);"></div><div
+        class="c-text"><div class="c-title">Google BigQuery</div><div
+        class="c-short-description">Analyzing massive datasets in real-time
+        using SQL-like queries</div><div class="c-bottom"><div class="c-hr
+        p-mb-1"></div><div class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: Google BigQueryEKvRO
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Google BigQuery
+        shortDescription: Analyzing massive datasets in real-time using SQL-like queries
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Google BigQuery
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Google BigQuery
+      editableName: Google BigQuery
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Google BigQuery
+      category: 5
+      imgUrl: https://static.softwaresim.com/logos/webp/bigquery_qbcoev.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/bigquery__044448_tx0mzn.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/bigquery_Black_87_wnczcr.webp
+      color: "#3871e0"
+      controlText: BigQuery
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+    width: 300
+    height: 100
+    offsetX: 278
+    offsetY: 253
+    zIndex: 0
+    inEdges:
+      - Orthogonal Connectoro2otc
+      - Orthogonal ConnectorkloK6
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #BA5512;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Jupyter_Black_87_uahk2k.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Jupyter_lm2xh2.webp);"></div><div
+        class="c-text"><div class="c-title">Jupyter</div><div
+        class="c-short-description">Interactive data analysis and visualization
+        in various programming languages</div><div class="c-bottom"><div
+        class="c-hr p-mb-1"></div><div
+        class="c-title-bottom">Jupyter</div></div></div></div></div>'
+    id: JupyterWTgFo
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Jupyter
+        shortDescription: Interactive data analysis and visualization in various
+          programming languages
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Jupyter
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Jupyter
+      editableName: Jupyter
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: IDE
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: request
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenRequests
+      dynamicsViews:
+        - type: Generator
+          status: Idle
+          name: IDE
+          AverageTimeBetweenRequests: 1
+      name: Jupyter
+      category: 10
+      imgUrl: https://static.softwaresim.com/logos/webp/Jupyter_lm2xh2.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Jupyter__044448_fyi1ig.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Jupyter_Black_87_uahk2k.webp
+      color: "#BA5512"
+      controlText: Jupyter
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+    width: 300
+    height: 100
+    offsetX: 619
+    offsetY: 194
+    zIndex: 1
+    outEdges:
+      - Dashed Straight ConnectortoIRu
+      - Orthogonal Connectoro2otc
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/vertexai_Black_87_vxjlos.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/vertexai_lkhlnv.webp);"></div><div
+        class="c-text"><div class="c-title">Google Vertex AI</div><div
+        class="c-short-description">Deploying, building, and managing machine
+        learning models</div><div class="c-bottom"><div class="c-hr
+        p-mb-1"></div><div class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: Google Vertex AIMHeVV
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Google Vertex AI
+        shortDescription: Deploying, building, and managing machine learning models
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Google Vertex AI
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Google Vertex AI
+      editableName: Google Vertex AI
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Google Vertex AI
+      category: 5
+      imgUrl: https://static.softwaresim.com/logos/webp/vertexai_lkhlnv.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/vertexai__044448_bktfch.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/vertexai_Black_87_vxjlos.webp
+      color: "#3871e0"
+      controlText: Vertex AI
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+    width: 300
+    height: 100
+    offsetX: 700
+    offsetY: 328
+    zIndex: 2
+    inEdges:
+      - Dashed Straight ConnectortoIRu
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/identity_and_access_management_Black_87_qj868e.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/identity_and_access_management_bgcfjr.webp);
+        border-radius: 10px"></div></div><div class="c-undername"><div>Google
+        Identity and Access Management</div></div></div>'
+    id: Google Identity and Access Managementcedve
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Google Identity and Access Management
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Google Identity and Access Management
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Google Identity and Access Management
+      editableName: Google Identity and Access Management
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Google Identity and Access Management
+      category: 5
+      imgUrl: https://static.softwaresim.com/logos/webp/identity_and_access_management_bgcfjr.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/identity_and_access_management__044448_tavyay.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/identity_and_access_management_Black_87_qj868e.webp
+      color: "#3871e0"
+      controlText: Identity & Access Management
+      selectedDynamicsView: 0
+      latitude: null
+      longitude: null
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 100
+    offsetX: 519
+    offsetY: 363
+    zIndex: 5
+    outEdges:
+      - Orthogonal ConnectorkloK6
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #4e3391; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Document_table_Black_87_v2_whtnmo.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Document_table_v2_a4l3if.webp);
+        border-radius: 10px"></div></div><div class="c-undername"><div>Raw
+        Data</div></div></div>'
+    id: Tabular DataDxf7r
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Tabular Data
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Tabular Data
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Tabular Data
+      editableName: Raw Data
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Data Generator
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: data
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenData
+      dynamicsViews:
+        - type: Generator
+          status: Idle
+          name: Data Generator
+          AverageTimeBetweenData: 1
+      name: Tabular Data
+      category: 4
+      imgUrl: https://static.softwaresim.com/logos/webp/Document_table_v2_a4l3if.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Document_table__044448_v2_ns2dtg.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Document_table_Black_87_v2_whtnmo.webp
+      color: "#4e3391"
+      controlText: Tabular Data
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+      latitude: null
+      longitude: null
+    width: 100
+    height: 100
+    offsetX: 330
+    offsetY: 13
+    zIndex: 7
+    outEdges:
+      - Dashed Straight Connectorr0Ghx
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #4e3391; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Document_table_Black_87_v2_whtnmo.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Document_table_v2_a4l3if.webp);
+        border-radius: 10px"></div></div><div class="c-undername"><div>Clean
+        Data</div></div></div>'
+    id: Tabular DataDxf7rARmr7
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Tabular Data
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Tabular Data
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Tabular Data
+      editableName: Clean Data
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Data Generator
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: data
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenData
+      dynamicsViews:
+        - type: Generator
+          status: Idle
+          name: Data Generator
+          AverageTimeBetweenData: 1
+      name: Tabular Data
+      category: 4
+      imgUrl: https://static.softwaresim.com/logos/webp/Document_table_v2_a4l3if.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Document_table__044448_v2_ns2dtg.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Document_table_Black_87_v2_whtnmo.webp
+      color: "#4e3391"
+      controlText: Tabular Data
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+      latitude: null
+      longitude: null
+    width: 100
+    height: 100
+    offsetX: 466
+    offsetY: 13
+    zIndex: 9
+    inEdges:
+      - Dashed Straight Connectorr0Ghx
+    outEdges:
+      - Dashed Straight ConnectorOn9y0
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #4e3391; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Document_table_Black_87_v2_whtnmo.webp);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://static.softwaresim.com/logos/webp/Document_table_v2_a4l3if.webp);
+        border-radius: 10px"></div></div><div class="c-undername"><div>ML
+        Data</div></div></div>'
+    id: Tabular DataDxf7relMZG
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Tabular Data
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        totaling: false
+        total: 0
+        viewType: total
+        name: Tabular Data
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Tabular Data
+      editableName: ML Data
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Data Generator
+          type: Generator
+          portsIn: {}
+          portsOut:
+            job: data
+          messageInterdepartureTime:
+            exp:
+              lambda: AverageTimeBetweenData
+      dynamicsViews:
+        - type: Generator
+          status: Idle
+          name: Data Generator
+          AverageTimeBetweenData: 1
+      name: Tabular Data
+      category: 4
+      imgUrl: https://static.softwaresim.com/logos/webp/Document_table_v2_a4l3if.webp
+      imgPrimaryUrl: https://static.softwaresim.com/logos/webp/Document_table__044448_v2_ns2dtg.webp
+      imgBlackUrl: https://static.softwaresim.com/logos/webp/Document_table_Black_87_v2_whtnmo.webp
+      color: "#4e3391"
+      controlText: Tabular Data
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToNamedSquare: true
+      collapsedToCircle: false
+      latitude: null
+      longitude: null
+    width: 100
+    height: 100
+    offsetX: 600
+    offsetY: 13
+    zIndex: 10
+    inEdges:
+      - Dashed Straight ConnectorOn9y0
+connectors:
+  - id: Dashed Straight ConnectortoIRu
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 649.22
+      y: 244
+    targetPoint:
+      x: 669.78
+      y: 278
+    sourceID: JupyterWTgFo
+    targetID: Google Vertex AIMHeVV
+    addInfo:
+      viewConnector: 0
+    zIndex: 3
+  - id: Orthogonal Connectoro2otc
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    constraints: 470654
+    sourcePoint:
+      x: 469
+      y: 194
+    targetPoint:
+      x: 428
+      y: 253
+    sourceID: JupyterWTgFo
+    targetID: Google BigQueryEKvRO
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 4
+  - id: Orthogonal ConnectorkloK6
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    constraints: 470654
+    sourcePoint:
+      x: 469
+      y: 363
+    targetPoint:
+      x: 428
+      y: 253
+    sourceID: Google Identity and Access Managementcedve
+    targetID: Google BigQueryEKvRO
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 6
+  - id: Dashed Straight Connectorr0Ghx
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 380
+      y: 13
+    targetPoint:
+      x: 416
+      y: 13
+    sourceID: Tabular DataDxf7r
+    targetID: Tabular DataDxf7rARmr7
+    addInfo:
+      viewConnector: 0
+    zIndex: 11
+  - id: Dashed Straight ConnectorOn9y0
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 516
+      y: 13
+    targetPoint:
+      x: 550
+      y: 13
+    sourceID: Tabular DataDxf7rARmr7
+    targetID: Tabular DataDxf7relMZG
+    addInfo:
+      viewConnector: 0
+    zIndex: 12
+backgroundColor: white
+selectedItems:
+  width: 0
+  height: 0
